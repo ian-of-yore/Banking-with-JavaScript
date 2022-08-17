@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onion Coin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-12">
+        <h1 class="text-5xl text-center pt-5 font-semibold">Exploit your <span
+                class="text-red-600 font-bold">Inventory</span>! </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-emerald-700 p-8 rounded-xl text-center">
+                    <h4 class="text-3xl pb-2">Deposit</h4>
+                    <h1 class="text-5xl pb-2">$<span id="amount-cash-in">00</span></h1>
+                </div>
+
+                <div class="bg-orange-600 p-8 rounded-xl text-center">
+                    <h4 class="text-3xl pb-2">Withdraw</h4>
+                    <h1 class="text-5xl pb-2">$<span id="amount-cash-out">00</span></h1>
+                </div>
+
+                <div class="bg-indigo-700 p-8 rounded-xl text-center">
+                    <h4 class="text-3xl pb-2">Balance</h4>
+                    <h1 class="text-5xl pb-2">$<span id="amount-balance">1245</span></h1>
+                </div>
+            </div>
+        </section>
+        <section class=" mt-12 w-9/12 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-xl bg-teal-500 p-8">
+                    <h1 class="text-3xl pb-2">Pay Tarrifs</h1>
+                    <div class="w-9/12 mx-auto">
+                        <input id="input-cash-in" class="block w-full h-9 rounded border-2 border-zinc-900" type="email"
+                            placeholder="$amount">
+                        <button id="btn-cash-in"
+                            class="bg-gray-900 text-white text-xl rounded py-2 px-7 mt-4 hover:text-white hover:bg-black ">Cash
+                            In</button>
+                    </div>
+                </div>
+                <div class="rounded-xl bg-teal-500 p-8">
+                    <h1 class="text-3xl pb-2">Accept Grants</h1>
+                    <div class="w-9/12 mx-auto">
+                        <input class="block w-full h-9 rounded border-2 border-zinc-900" name="" id="input-cash-out"
+                            type="email" placeholder="$amount">
+
+                        <button id="btn-cash-out"
+                            class="bg-gray-900 text-white text-xl rounded py-2 px-7 mt-4 hover:text-white hover:bg-black ">Cash
+                            Out</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="JavaScript/inventory.js"></script>
+</body>
+
+</html>
